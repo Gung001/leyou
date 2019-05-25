@@ -13,6 +13,10 @@ zuul:
   routes:
     # 商品路由信息
     item-service: /item/**
+    upload-service:
+      path: /upload/**
+      serviceId: upload-service
+      strip-prefix: false
 hystrix:
   command:
     default:
